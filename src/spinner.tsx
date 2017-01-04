@@ -21,8 +21,8 @@ const SpinnerContainer: StatelessComponent <{
 `
 
 const StyledProgressBar: any = styled(ProgressBar) `
-  width: ${({size}) => size}px;
-  height: ${({size}) => size}px;
+  width: ${({size}) => size}px !important;
+  height: ${({size}) => size}px !important;
 `
 
 export type Props = {

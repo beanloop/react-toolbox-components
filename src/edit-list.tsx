@@ -32,25 +32,6 @@ const Menu = withMedia(mediaMobile)(({matches, items, ...props}) =>
       </Row>
 )
 
-
-const enhance = compose(
-  lifecycle({
-    componentWillReceiveProps(nextProps) {
-      if (nextProps.edit == null) {
-        if (nextProps.mapFields) {
-          for (const value of nextProps.value) {
-            const fields = nextProps.mapFields(nextProps.editFields, value)
-
-            if (fields.some(field => field.validationError)) {
-              nextProps.setEdit(value)
-            }
-          }
-        }
-      }
-    }
-  })
-)
-
 type Props = {
   /**
    * The object the form will manage
@@ -109,6 +90,14 @@ type Props = {
    * Set to true to only show error messages for fields that have been touched
    */
   errorOnTouched?: boolean
+  /**
+   * Caption for the edit menu item
+   */
+  editCaption?: ReactChild
+  /**
+   * Caption for the delete menu item
+   */
+  deleteCaption?: ReactChild
 }
 
 type Labels = Array<{
@@ -118,6 +107,24 @@ type Labels = Array<{
    */
   path: Array<string|number>
 }>
+
+const enhance = compose(
+  lifecycle({
+    componentWillReceiveProps(nextProps) {
+      if (nextProps.edit == null) {
+        if (nextProps.mapFields) {
+          for (const value of nextProps.value) {
+            const fields = nextProps.mapFields(nextProps.editFields, value)
+
+            if (fields.some(field => field.validationError)) {
+              nextProps.setEdit(value)
+            }
+          }
+        }
+      }
+    }
+  })
+)
 
 /**
  * Component for displaying a list of items, which handles editing and removal.
@@ -155,7 +162,11 @@ type Labels = Array<{
  *     setEdit={setEditUser}
  *   />
  */
-export const EditList = enhance(({value: list, labels, onChange, errorOnTouched, editFields, mapFields, edit, setEdit}: Props) =>
+export const EditList = enhance(({
+  value: list, onChange, labels, editFields, mapFields, edit, setEdit,
+  editCaption = 'Edit', deleteCaption = 'Delete',
+  errorOnTouched,
+}: Props) =>
   <Table>
     <TableRow>
       {list.length > 0 && labels.map((label, i) => <TableHeader key={i}>{label.label}</TableHeader>)}
@@ -189,10 +200,10 @@ export const EditList = enhance(({value: list, labels, onChange, errorOnTouched,
             })}
             <TableCell>
               <Menu position='topRight' menuRipple items={[
-                {value: 'edit', icon: 'edit', caption: 'Edit', onClick() {
+                {value: 'edit', icon: 'edit', caption: editCaption, onClick() {
                   setEdit(value)
                 }},
-                {value: 'delete', icon: 'delete', caption: 'Delete', onClick() {onChange(removeIn(i, list))}},
+                {value: 'delete', icon: 'delete', caption: deleteCaption, onClick() {onChange(removeIn(i, list))}},
               ]} />
             </TableCell>
           </TableRow>

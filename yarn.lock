@@ -2,6 +2,14 @@
 # yarn lockfile v1
 
 
+"@types/jest@^16.0.3":
+  version "16.0.3"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-16.0.3.tgz#28a465586cd37d2638043ebcca91010ed89fc284"
+
+"@types/node@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-7.0.0.tgz#c081147b109da5f9c57af70571771be97ce9c0ba"
+
 "@types/react@^0.14.55":
   version "0.14.55"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-0.14.55.tgz#f7f7a6ad0c94780531e95632435b2798c5dad11b"
@@ -1267,6 +1275,10 @@ change-case@3.0.x:
     title-case "^2.1.0"
     upper-case "^1.1.1"
     upper-case-first "^1.1.0"
+
+change-emitter@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/change-emitter/-/change-emitter-0.1.2.tgz#6b88ca4d5d864e516f913421b11899a860aee8db"
 
 chokidar@^1.0.0:
   version "1.6.1"
@@ -3237,6 +3249,10 @@ header-case@^1.0.0:
 hoek@2.x.x:
   version "2.16.3"
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-2.16.3.tgz#20bb7403d3cea398e91dc4710a8ff1b8274a25ed"
+
+hoist-non-react-statics@^1.0.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
 
 home-or-tmp@^2.0.0:
   version "2.0.0"
@@ -6311,6 +6327,15 @@ rechoir@^0.6.2:
   dependencies:
     resolve "^1.1.6"
 
+recompose@^0.21.2:
+  version "0.21.2"
+  resolved "https://registry.yarnpkg.com/recompose/-/recompose-0.21.2.tgz#ff3fbdb2397b1c77c47d451be2a63b9295d44681"
+  dependencies:
+    change-emitter "^0.1.2"
+    fbjs "^0.8.1"
+    hoist-non-react-statics "^1.0.0"
+    symbol-observable "^1.0.4"
+
 recursive-readdir@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/recursive-readdir/-/recursive-readdir-2.0.0.tgz#8c46db7946cbaf3d4ebade1873f33d8cd973131a"
@@ -7014,6 +7039,10 @@ swap-case@^1.1.0:
     lower-case "^1.1.1"
     upper-case "^1.1.1"
 
+symbol-observable@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.0.4.tgz#29bf615d4aa7121bdd898b22d4b3f9bc4e2aa03d"
+
 "symbol-tree@>= 3.1.0 < 4.0.0":
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.1.tgz#8549dd1d01fa9f893c18cc9ab0b106b4d9b168cb"
@@ -7250,9 +7279,9 @@ ts-loader@^0.8.2:
     object-assign "^2.0.0"
     semver "^5.0.1"
 
-tscomp@^0.7.4:
-  version "0.7.4"
-  resolved "https://registry.yarnpkg.com/tscomp/-/tscomp-0.7.4.tgz#65aa088eb22320e884d80d054294ddd34a32f883"
+tscomp@^0.7.5:
+  version "0.7.5"
+  resolved "https://registry.yarnpkg.com/tscomp/-/tscomp-0.7.5.tgz#bc96a21fbe8be5a5f797993e5d8473909248dfd5"
   dependencies:
     autoprefixer "6.4.0"
     babel-core "6.14.0"

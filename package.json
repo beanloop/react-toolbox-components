@@ -26,8 +26,11 @@
   "dependencies": {
     "@types/react": "^0.14.55",
     "recompose": "^0.21.2",
+    "react-form-helper": "^0.2.1",
+    "react-with-media": "^0.1.0",
+    "redux-decorated": "^1.0.1",
     "styled-components": "^1.2.1",
-    "styled-material": "^0.1.1"
+    "styled-material": "^0.1.5"
   },
   "peerDependencies": {
     "immutability-helper": "^2.1.0",

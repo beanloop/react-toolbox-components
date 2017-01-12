@@ -6194,6 +6194,13 @@ rc@^1.0.1, rc@^1.1.6, rc@~1.1.6:
     minimist "^1.2.0"
     strip-json-comments "~1.0.4"
 
+react-addons-css-transition-group@^15.4.2:
+  version "15.4.2"
+  resolved "https://registry.yarnpkg.com/react-addons-css-transition-group/-/react-addons-css-transition-group-15.4.2.tgz#b7828834dfa14229fe07750e331e8a8cb6fb7745"
+  dependencies:
+    fbjs "^0.8.4"
+    object-assign "^4.1.0"
+
 react-css-themr@^1.7.1:
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/react-css-themr/-/react-css-themr-1.7.1.tgz#ac0959ee64f020a05e2f3f4e1c9c7489964f8556"

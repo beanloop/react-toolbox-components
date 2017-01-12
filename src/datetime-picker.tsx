@@ -40,7 +40,7 @@ export const StatelessDateTimePicker = ({
   DatePicker: ReactType
   TimePicker: ReactType
 }) => {
-  const dateValue = typeof value === 'string' ? new Date(value) : (value || new Date())
+  const dateValue = ((value && typeof value === 'string') ? new Date(value) : (value || new Date())) as Date
   dateValue.setSeconds(0)
   let timePicker
 

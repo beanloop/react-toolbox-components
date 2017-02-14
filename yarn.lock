@@ -7339,9 +7339,9 @@ ts-loader@^0.8.2:
     object-assign "^2.0.0"
     semver "^5.0.1"
 
-tscomp@^0.7.5:
-  version "0.7.5"
-  resolved "https://registry.yarnpkg.com/tscomp/-/tscomp-0.7.5.tgz#bc96a21fbe8be5a5f797993e5d8473909248dfd5"
+tscomp@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/tscomp/-/tscomp-0.8.0.tgz#eef2d291c4e714d94306b606e0b46890fc34b47b"
   dependencies:
     autoprefixer "6.4.0"
     babel-core "6.14.0"
@@ -7408,7 +7408,7 @@ tscomp@^0.7.5:
     strip-ansi "3.0.1"
     style-loader "0.13.1"
     ts-loader "^0.8.2"
-    typescript "2.2.0-dev.20161129"
+    typescript "2.1.5"
     url-loader "0.5.7"
     webpack "1.13.2"
     webpack-dev-server "1.15.1"
@@ -7465,9 +7465,9 @@ typescript@1.8.10:
   version "1.8.10"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-1.8.10.tgz#b475d6e0dff0bf50f296e5ca6ef9fbb5c7320f1e"
 
-typescript@2.2.0-dev.20161129:
-  version "2.2.0-dev.20161129"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.2.0-dev.20161129.tgz#f39bc67c5eecf5aab925504b72145be571a1e708"
+typescript@2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.1.5.tgz#6fe9479e00e01855247cea216e7561bafcdbcd4a"
 
 ua-parser-js@^0.7.9:
   version "0.7.12"

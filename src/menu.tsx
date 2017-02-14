@@ -5,8 +5,8 @@ import {Row} from 'styled-material/dist/src/layout'
 
 export const mediaMobile = '(max-width: 500px)'
 
-export const Menu = withMedia(mediaMobile)(({matches, items, ...props}) =>
-  matches
+export const Menu = withMedia(mediaMobile)(({matches, items, forceMenu, forceExpanded, limitExpandedItems = 2, ...props}) =>
+  !forceExpanded && (forceMenu || matches || items.length > limitExpandedItems)
     ?
       <IconMenu icon='more_vert' {...props}>
         {items.map(item =>

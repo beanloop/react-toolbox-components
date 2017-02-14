@@ -1,6 +1,6 @@
 {
   "name": "react-toolbox-components",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Various react toolbox components",
   "main": "dist/src/index.js",
   "scripts": {

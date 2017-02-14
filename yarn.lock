@@ -2678,6 +2678,7 @@ flat-cache@^1.2.1:
   dependencies:
     circular-json "^0.3.1"
     del "^2.0.2"
+
     graceful-fs "^4.1.2"
     write "^0.2.1"
 
@@ -7059,7 +7060,7 @@ styled-components@^1.1.1, styled-components@^1.2.1:
     is-plain-object "^2.0.1"
     supports-color "^3.1.2"
 
-styled-material@^0.1.8:
+styled-material@0.1.8:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/styled-material/-/styled-material-0.1.8.tgz#a9ea8957d41d7bd53f430ccb0a1364ba0a1deda5"
   dependencies:

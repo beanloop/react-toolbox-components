@@ -68,6 +68,7 @@ export const StatelessDateTimePicker = ({
       <TimePicker
         ref={t => timePicker = t && t.refs.wrappedInstance}
         active={picker === 'time'}
+        cancelLabel={cancelLabel}
         onDismiss={() => setPicker(null)}
         onEscKeyDown={() => setPicker(null)}
         onOverlayClick={() => setPicker(null)}

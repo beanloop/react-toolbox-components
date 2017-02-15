@@ -168,7 +168,10 @@ export const EditList = enhance(({
             fields={mapFields ? mapFields(editFields, value) : editFields}
             buttonComponent={({disabled}) => <TableCell><Row horizontal='flex-end'>
               <IconButton icon='check' disabled={disabled} onClick={() => setEdit(null)} />
-              <IconButton icon='delete' onClick={() => onChange(removeIn(i, list))} />
+              <IconButton icon='delete' onClick={() => {
+                setEdit(null)
+                onChange(removeIn(i, list))
+              }} />
             </Row></TableCell>}
             saveButton={true}
           />

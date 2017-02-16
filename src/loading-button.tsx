@@ -47,7 +47,7 @@ export class LoadingButton extends Component<Props, State> {
         }
       })}>
         {children}
-        {loading && <Spinner size={24} type='circular' background='rgba(255, 255, 255, 0.5)' />}
+        {loading && <Spinner size={24} center type='circular' background='rgba(255, 255, 255, 0.5)' />}
       </Button>
     )
   }

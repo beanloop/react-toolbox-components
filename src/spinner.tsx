@@ -28,9 +28,9 @@ const SpinnerContainer: StatelessComponent <{
 `
 
 const StyledProgressBar: any = styled(ProgressBar)`
-  ${({type}) => type === 'circular' && `
-    width: ${({size}) => size}px !important;
-    height: ${({size}) => size}px !important;
+  ${({size, type}) => type === 'circular' && `
+    width: ${size}px !important;
+    height: ${size}px !important;
   `}
 `
 
@@ -92,7 +92,7 @@ export const enhance = compose(
       }
     },
 
-    componentWillUnount() {
+    componentWillUnmount() {
       if (this.timeout) {
         clearTimeout(this.timeout)
       }

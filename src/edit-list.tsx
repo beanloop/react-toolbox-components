@@ -1,3 +1,4 @@
+import * as React from 'react'
 import {ReactChild} from 'react'
 import {FieldConfig, FormHelper} from 'react-form-helper'
 import {getValue} from 'react-form-helper/dist/src/helpers'

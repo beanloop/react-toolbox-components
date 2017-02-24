@@ -1,3 +1,4 @@
+import * as React from 'react'
 import {Component} from 'react'
 import {Button} from 'react-toolbox/lib/button'
 import {Spinner} from './spinner'

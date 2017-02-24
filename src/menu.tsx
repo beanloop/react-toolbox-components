@@ -1,3 +1,4 @@
+import * as React from 'react'
 import {IconButton} from 'react-toolbox/lib/button'
 import {IconMenu, MenuItem} from 'react-toolbox/lib/menu'
 import {withMedia} from 'react-with-media'

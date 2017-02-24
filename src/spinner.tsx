@@ -1,3 +1,4 @@
+import * as React from 'react'
 import {StatelessComponent} from 'react'
 import ProgressBar from 'react-toolbox/lib/progress_bar'
 import compose from 'recompose/compose'

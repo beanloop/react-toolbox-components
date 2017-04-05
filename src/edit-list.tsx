@@ -23,6 +23,7 @@ type Props = {
   /**
    * Optionally pass an array of fields that should be editable
    *
+   * ```
    * [
    *   {
    *     path: ['username'],
@@ -33,6 +34,7 @@ type Props = {
    *     required: true,
    *   }
    * ]
+   * ```
    */
   editFields?: Array<FieldConfig>
   /**
@@ -43,6 +45,7 @@ type Props = {
   /**
    * Labels to show in the list
    *
+   * ```
    * [
    *   {
    *     label: 'Username',
@@ -53,15 +56,16 @@ type Props = {
    *     path: ['password']
    *   },
    * ]
+   * ```
    */
   labels: Labels
   /**
    * Callback when any field in the form is modified.
-   * If this property is set, the form becomes a controlled component and the value
-   * prop must be maintained externally.
+   * If this property is set, the form becomes a controlled component
+   * and the value prop must be maintained externally.
    *
-   * This is useful if you nest multiple FormHelpers or need to restrict user input
-   * before it appear on the screen.
+   * This is useful if you nest multiple FormHelpers or need to
+   * restrict user input before it appear on the screen.
    */
   onChange: (updatedList) => void
   /**
@@ -70,7 +74,8 @@ type Props = {
   edit: any
   setEdit: Function
   /**
-   * Set to true to only show error messages for fields that have been touched
+   * Set to true to only show error messages for fields that
+   * have been touched
    */
   errorOnTouched?: boolean
   /**
@@ -112,6 +117,8 @@ const enhance = compose(
 /**
  * Component for displaying a list of items, which handles editing and removal.
  *
+ * ##### Example
+ * ```
  * const enhance = compose(
  *   withState('user', 'setUser', [{username: 'test', password: 'test'}]),
  *   withState('editUser', 'setEditUser', null),
@@ -144,6 +151,7 @@ const enhance = compose(
  *     edit={editUser}
  *     setEdit={setEditUser}
  *   />
+ * ```
  */
 export const EditList = enhance(({
   value: list, onChange, labels, editFields, mapFields, edit, setEdit,

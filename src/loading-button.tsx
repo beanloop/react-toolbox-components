@@ -1,6 +1,6 @@
 import * as React from 'react'
 import {Component} from 'react'
-import {Button} from 'react-toolbox/lib/button'
+import Button from 'react-toolbox/lib/button/Button'
 import {Spinner} from './spinner'
 
 export type Props = {

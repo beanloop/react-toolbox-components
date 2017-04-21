@@ -1,6 +1,7 @@
 import * as React from 'react'
-import {IconButton} from 'react-toolbox/lib/button'
-import {IconMenu, MenuItem} from 'react-toolbox/lib/menu'
+import IconButton from 'react-toolbox/lib/button/IconButton'
+import IconMenu from 'react-toolbox/lib/menu/IconMenu'
+import MenuItem from 'react-toolbox/lib/menu/MenuItem'
 import {withMedia} from 'react-with-media'
 import {Row} from 'styled-material/dist/src/layout'
 

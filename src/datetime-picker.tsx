@@ -1,7 +1,7 @@
 import * as React from 'react'
 import {ComponentClass, ReactType, StatelessComponent} from 'react'
 import {themr} from 'react-css-themr'
-import {IconButton} from 'react-toolbox/lib/button'
+import IconButton from 'react-toolbox/lib/button/IconButton'
 import calendarFactory from 'react-toolbox/lib/date_picker/Calendar'
 import datePickerDialogFactory from 'react-toolbox/lib/date_picker/DatePickerDialog'
 import dateTheme from 'react-toolbox/lib/date_picker/theme.scss'

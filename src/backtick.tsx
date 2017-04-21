@@ -15,7 +15,7 @@ export const StyledBacktick: StatelessComponent<{
   z-index: 11;
   background-color: rgba(0, 0, 0, 0.54);
   will-change: opacity;
-`
+` as any
 
 export const Backtick = ({open, onClick}) =>
   <TransitionMotion

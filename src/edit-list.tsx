@@ -188,7 +188,7 @@ export const EditList = enhance(({
             {labels.map((label, i) => {
               const labelValue = getValue(label.path, value)
 
-              return <TableCell key={i}>
+              return <TableCell style={{width: '100%'}} key={i}>
                 <span>{labelValue}</span>
               </TableCell>
             })}
